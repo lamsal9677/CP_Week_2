@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ad8e60 "
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Que"
+        android:layout_width="400dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+
+        android:layout_height="200dp"
+        android:background="@drawable/question"
+        android:text="@string/who_was_the_first_man_to_fly_into_space"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/Ans1"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/neil_armstrong"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/Ans2"
+        android:gravity="center"
+        android:elevation="3dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/yuri_gagrin"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Ans3"
+        android:gravity="center"
+        android:elevation="3dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/rajnikant"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Ans4"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/bill_gates"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+</RelativeLayout>

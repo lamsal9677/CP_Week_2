@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CP_Week_2</string>
+    <string name="who_was_the_first_man_to_fly_into_space">Who was the first man to fly into space?</string>
+    <string name="neil_armstrong">Neil Armstrong</string>
+    <string name="yuri_gagrin">Yuri Gagrin</string>
+    <string name="rajnikant">Rajnikant</string>
+    <string name="bill_gates">Bill Gates</string>
+</resources>
