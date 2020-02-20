@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#ad8e60 "
+    android:background="#A9A9A9 "
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -12,7 +12,7 @@
         android:id="@+id/Que"
         android:layout_width="400dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginRight="15dp"
 
         android:layout_height="200dp"
         android:background="@drawable/question"
@@ -24,13 +24,13 @@
 
     <TextView
         android:id="@+id/Ans1"
-        android:elevation="3dp"
-        android:gravity="center"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:background="@drawable/shape"
-        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="300dp"
+        android:background="@drawable/shape"
+        android:elevation="8dp"
+        android:gravity="center"
         android:text="@string/neil_armstrong"
         android:textAlignment="center"
         android:textSize="25sp" />
@@ -38,27 +38,28 @@
 
     <TextView
         android:id="@+id/Ans2"
-        android:gravity="center"
-        android:elevation="3dp"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:background="@drawable/shape"
-        android:layout_marginLeft="235dp"
+        android:layout_marginStart="235dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="300dp"
-        android:text="@string/yuri_gagrin"
+        android:background="@drawable/shape"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:text="@string/yuri_gagarin"
         android:textAlignment="center"
         android:textSize="25sp" />
 
     <TextView
         android:id="@+id/Ans3"
-        android:gravity="center"
-        android:elevation="3dp"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:background="@drawable/shape"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="450dp"
-        android:text="@string/rajnikant"
+        android:background="@drawable/shape"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:text="Barack Obama"
         android:textAlignment="center"
         android:textSize="25sp" />
 
@@ -71,7 +72,41 @@
         android:background="@drawable/shape"
         android:layout_marginLeft="235dp"
         android:layout_marginTop="450dp"
+        android:layout_marginRight="20dp"
         android:text="@string/bill_gates"
         android:textAlignment="center"
         android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="150sp"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/hide"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="300sp"
+        android:src="@drawable/ic_iconmonstr_eye_8"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/see"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="300sp"
+        android:src="@drawable/ic_see"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/refresh"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="45sp"
+        android:src="@drawable/ic_refresh"/>
+
 </RelativeLayout>
