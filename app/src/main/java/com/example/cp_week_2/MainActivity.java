@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.Ans2).setVisibility(View.INVISIBLE);
                 findViewById(R.id.Ans3).setVisibility(View.INVISIBLE);
                 findViewById(R.id.Ans4).setVisibility(View.INVISIBLE);
+                findViewById(R.id.Result).setVisibility(View.INVISIBLE);
                 findViewById(R.id.hide).setVisibility(View.INVISIBLE);
                 findViewById(R.id.see).setVisibility(View.VISIBLE);
             }
@@ -49,16 +50,17 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.Ans4).setVisibility(View.VISIBLE);
                 findViewById(R.id.hide).setVisibility(View.VISIBLE);
                 findViewById(R.id.see).setVisibility(View.INVISIBLE);
+                findViewById(R.id.Result).setVisibility(View.VISIBLE);
             }
         });
 
         findViewById(R.id.Ans1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findViewById(R.id.Ans1).setBackgroundColor(getResources().getColor(R.color.RED, null));
-                findViewById(R.id.Ans2).setBackgroundColor(getResources().getColor(R.color.GREEN, null));
-                findViewById(R.id.Ans3).setBackgroundColor(getResources().getColor(R.color.RED, null));
-                findViewById(R.id.Ans4).setBackgroundColor(getResources().getColor(R.color.RED, null));
+                findViewById(R.id.Ans1).setBackgroundResource(R.drawable.incorrect);
+                findViewById(R.id.Ans2).setBackgroundResource(R.drawable.correct);
+                findViewById(R.id.Ans3).setBackgroundResource(R.drawable.incorrect);
+                findViewById(R.id.Ans4).setBackgroundResource(R.drawable.incorrect);
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Incorrect:(");
             }
@@ -66,10 +68,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.Ans2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findViewById(R.id.Ans1).setBackgroundColor(getResources().getColor(R.color.RED, null));
-                findViewById(R.id.Ans2).setBackgroundColor(getResources().getColor(R.color.GREEN, null));
-                findViewById(R.id.Ans3).setBackgroundColor(getResources().getColor(R.color.RED, null));
-                findViewById(R.id.Ans4).setBackgroundColor(getResources().getColor(R.color.RED, null));
+                findViewById(R.id.Ans1).setBackgroundResource(R.drawable.incorrect);
+                findViewById(R.id.Ans2).setBackgroundResource(R.drawable.correct);
+                findViewById(R.id.Ans3).setBackgroundResource(R.drawable.incorrect);
+                findViewById(R.id.Ans4).setBackgroundResource(R.drawable.incorrect);
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Correct!!");
@@ -78,10 +80,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.Ans3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findViewById(R.id.Ans1).setBackgroundColor(getResources().getColor(R.color.RED, null));
-                findViewById(R.id.Ans2).setBackgroundColor(getResources().getColor(R.color.GREEN, null));
-                findViewById(R.id.Ans3).setBackgroundColor(getResources().getColor(R.color.RED, null));
-                findViewById(R.id.Ans4).setBackgroundColor(getResources().getColor(R.color.RED, null));
+                findViewById(R.id.Ans1).setBackgroundResource(R.drawable.incorrect);
+                findViewById(R.id.Ans2).setBackgroundResource(R.drawable.correct);
+                findViewById(R.id.Ans3).setBackgroundResource(R.drawable.incorrect);
+                findViewById(R.id.Ans4).setBackgroundResource(R.drawable.incorrect);
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Incorrect:(");
@@ -90,10 +92,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.Ans4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findViewById(R.id.Ans1).setBackgroundColor(getResources().getColor(R.color.RED, null));
-                findViewById(R.id.Ans2).setBackgroundColor(getResources().getColor(R.color.GREEN, null));
-                findViewById(R.id.Ans3).setBackgroundColor(getResources().getColor(R.color.RED, null));
-                findViewById(R.id.Ans4).setBackgroundColor(getResources().getColor(R.color.RED, null));
+                findViewById(R.id.Ans1).setBackgroundResource(R.drawable.incorrect);
+                findViewById(R.id.Ans2).setBackgroundResource(R.drawable.correct);
+                findViewById(R.id.Ans3).setBackgroundResource(R.drawable.incorrect);
+                findViewById(R.id.Ans4).setBackgroundResource(R.drawable.incorrect);
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Incorrect:(");
@@ -103,15 +105,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.refresh).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView Ans1 = (TextView) findViewById(R.id.Ans1);
-                TextView Ans2 = (TextView) findViewById(R.id.Ans2);
-                TextView Ans3 = (TextView) findViewById(R.id.Ans3);
-                TextView Ans4 = (TextView) findViewById(R.id.Ans4);
-
-                Ans1.setBackgroundColor(Color.argb(255, 177, 156, 217));
-                Ans2.setBackgroundColor(Color.argb(255, 177, 156, 217));
-                Ans3.setBackgroundColor(Color.argb(255, 177, 156, 217));
-                Ans4.setBackgroundColor(Color.argb(255, 177, 156, 217));
+                findViewById(R.id.Ans1).setBackgroundResource(R.drawable.shape);
+                findViewById(R.id.Ans2).setBackgroundResource(R.drawable.shape);
+                findViewById(R.id.Ans3).setBackgroundResource(R.drawable.shape);
+                findViewById(R.id.Ans4).setBackgroundResource(R.drawable.shape);
 
                 TextView textView = (TextView) findViewById(R.id.Result);
                 textView.setText("Select One");
